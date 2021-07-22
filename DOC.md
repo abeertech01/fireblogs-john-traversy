@@ -17,3 +17,6 @@ in this part i am gonna add navigation for desktop and mobile.
 6 = vue-svg-loader dependency makes it possible to use svg images like vue components. to use the dependency a configuration file is included called "vue.config.js"
 
 7, 8, 9 = [Vue Transition in official website](https://vuejs.org/v2/guide/transitions.html#Transition-Classes)
+
+# Footer
+the footer component is copied and pasted from the repository.
