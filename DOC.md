@@ -8,3 +8,12 @@ First of all set a project in firebase. then created a web app in firebase proje
 3 = initialized firebase app
 
 4 = firebase timestamp. now i may not understand what is the timestamp, but later he will explain.
+
+# Navigation
+in this part i am gonna add navigation for desktop and mobile.
+
+5 = gave name to the 'to' attribute so that i can change the url whenever i want.
+
+6 = vue-svg-loader dependency makes it possible to use svg images like vue components. to use the dependency a configuration file is included called "vue.config.js"
+
+7, 8, 9 = [Vue Transition in official website](https://vuejs.org/v2/guide/transitions.html#Transition-Classes)
