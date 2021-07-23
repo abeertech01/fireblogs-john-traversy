@@ -32,4 +32,4 @@ Now we are going to have another component named BlogPost for all the blog post 
 11 = since the BlogPost component works for every blog preview and they have a common prop, we need to make sure which one is getting fit there. that's why we are using if else and checking if it's welcomeScreen.
 
 #### (style)
-12 = The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. more details on [w3schools page](https://www.w3schools.com/csS/css3_object-fit.asp)
+12 = The CSS object-fit property is used to specify how an `<img>` or `<video>` should be resized to fit its container. more details on [w3schools page](https://www.w3schools.com/csS/css3_object-fit.asp)
