@@ -33,3 +33,11 @@ Now we are going to have another component named BlogPost for all the blog post 
 
 #### (style)
 12 = The CSS object-fit property is used to specify how an `<img>` or `<video>` should be resized to fit its container. more details on [w3schools page](https://www.w3schools.com/csS/css3_object-fit.asp)
+
+### Blog Card Component
+simply i made another component for blog cards. then i added the cards inside home page. that's it.
+
+#### App.vue (line 70)
+13 = fill property in css is for filling in the color of the SVG image. details in [CSS-TRICKS website](https://css-tricks.com/almanac/properties/f/fill/)
+
+14 = The pointer-events property defines whether or not an element reacts to pointer events. details on [w3schools website](https://www.w3schools.com/csSref/css3_pr_pointer-events.asp)
