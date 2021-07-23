@@ -43,4 +43,23 @@ simply i made another component for blog cards. then i added the cards inside ho
 14 = The pointer-events property defines whether or not an element reacts to pointer events. details on [w3schools website](https://www.w3schools.com/csSref/css3_pr_pointer-events.asp)
 
 ### Register Section
-created a register section at bottom of home view.
+added a register section at bottom of home view.
+
+# Blogs View
+replaced the blogcards array and fetched by computed property.
+
+created Blogs.vue view/component.
+
+since some of the styling is given commonly in app.vue it is working same for blog cards in blogs component.
+
+#### /store/index.js (line 8)
+15 = since i will need to use the set of data in multiple places i replaced it from home component to the state of store.
+
+#### Blogs.vue (line 27)
+16 = get and set because the actual data is situated in state. so we need to get the data and in the meantime we need to set the data.
+
+#### BlogCard.vue (line 38)
+17 = just fetched the the editPost data.
+
+#### (line 3)
+18 = added v-show condition so that the options can be disappeared or appeared when we click the toggle checkbox button.
