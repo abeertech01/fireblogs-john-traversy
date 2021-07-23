@@ -41,3 +41,6 @@ simply i made another component for blog cards. then i added the cards inside ho
 13 = fill property in css is for filling in the color of the SVG image. details in [CSS-TRICKS website](https://css-tricks.com/almanac/properties/f/fill/)
 
 14 = The pointer-events property defines whether or not an element reacts to pointer events. details on [w3schools website](https://www.w3schools.com/csSref/css3_pr_pointer-events.asp)
+
+### Register Section
+created a register section at bottom of home view.
