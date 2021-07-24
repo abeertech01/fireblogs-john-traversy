@@ -63,3 +63,7 @@ since some of the styling is given commonly in app.vue it is working same for bl
 
 #### (line 3)
 18 = added v-show condition so that the options can be disappeared or appeared when we click the toggle checkbox button.
+
+# Vue Document Titles
+in this part we will set a system so that whenever we go to a page the name of the page will be appeared on tab which is document title.
+to do so, we added meta data to every route. then attached beforeEach guard to router and set document title for each route.
