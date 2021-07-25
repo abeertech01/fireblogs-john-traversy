@@ -116,3 +116,9 @@ as usual here we also need to import firebase auth and error data. then logging 
 
 #### App.vue (line 25)
 30 = here this method runs in every auth state change. the user parameter contains if there is any current user logged in.
+
+# Profile Menu
+#### Navigation.vue (line 18)
+31 = here are all profile menu html.
+
+32 = here is the styling of the profile menu.
