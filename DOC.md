@@ -122,3 +122,11 @@ as usual here we also need to import firebase auth and error data. then logging 
 31 = here are all profile menu html.
 
 32 = here is the styling of the profile menu.
+
+# Conditional rendering (user)
+conditional rendering means some stuffs will be rendered based on some conditions.
+
+when user logs in, he/she should not see the register/login option and the register button below. same goes to the welcome post at the very top.
+
+# Profile View
+in profile view we added some markup and styling for profile view. then we added an action for updating what user wants to update.

@@ -11,12 +11,17 @@
           <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
           <router-link class="link" :to="{ name: 'Blogs' }">Blogs</router-link>
           <router-link class="link" to="#">Create Post</router-link>
-          <router-link class="link" :to="{ name: 'Login' }"
+          <router-link v-if="!user" class="link" :to="{ name: 'Login' }"
             >Login/Register</router-link
           >
         </ul>
         <!-- [31] -->
-        <div @click="toggleProfileMenu" class="profile" ref="profile">
+        <div
+          v-if="user"
+          @click="toggleProfileMenu"
+          class="profile"
+          ref="profile"
+        >
           <span>{{ this.$store.state.profileInitials }}</span>
           <div v-show="profileMenu" class="profile-menu">
             <div class="info">
@@ -32,13 +37,13 @@
             </div>
             <div class="options">
               <div class="option">
-                <router-link class="option" to="#">
+                <router-link class="option" :to="{ name: 'Profile' }">
                   <userIcon class="icon" />
                   <p>Profile</p>
                 </router-link>
               </div>
               <div class="option">
-                <router-link class="option" to="#">
+                <router-link class="option" :to="{ name: 'Admin' }">
                   <adminIcon class="icon" />
                   <p>Admin</p>
                 </router-link>
@@ -62,7 +67,7 @@
         <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
         <router-link class="link" :to="{ name: 'Blogs' }">Blogs</router-link>
         <router-link class="link" to="#">Create Post</router-link>
-        <router-link class="link" :to="{ name: 'Login' }"
+        <router-link v-if="!user" class="link" :to="{ name: 'Login' }"
           >Login/Register</router-link
         >
       </ul>
@@ -120,6 +125,11 @@ export default {
     signOut() {
       firebase.auth().signOut();
       window.location.reload();
+    },
+  },
+  computed: {
+    user() {
+      return this.$store.state.user;
     },
   },
 };
