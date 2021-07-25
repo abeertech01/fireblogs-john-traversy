@@ -67,3 +67,52 @@ since some of the styling is given commonly in app.vue it is working same for bl
 # Vue Document Titles
 in this part we will set a system so that whenever we go to a page the name of the page will be appeared on tab which is document title.
 to do so, we added meta data to every route. then attached beforeEach guard to router and set document title for each route.
+
+# Firebase Auth Implementation
+first of all i created three views for login, registration and forgetting password (recovering password).
+
+since these 3 pages look same that's why i added a lot of common styling in login page and didn't scope.
+
+#### Login.vue(line 174)
+19 = The flex property is a shorthand property for:
+
+1.flex-grow
+2.flex-shrink
+3.flex-basis
+
+for better understanding see the details in [CSS TRICKS website](https://css-tricks.com/almanac/properties/f/flex/)
+
+#### Register.vue(line 45)
+20 = here i imported firebase auth to make the authentication happen.
+
+now it's time to set the system to register. so, created a method register.
+
+#### (line 78)
+21 = created authentication variable.
+
+22 = creating a user
+
+23 = created a user document in database by the created user's uid.
+
+24 = then we set all the data in the document.
+
+25 = after that we go to the home page.
+
+so registering works fine. now it's time to set login
+
+as usual here we also need to import firebase auth and error data. then logging in with the signin method using email and password. now we are going to test if we get logged in after reloading.
+
+#### App.vue(line 27)
+26 = we can see null in console. that's because our application is running before firebase initializes.
+
+#### main.js(line 13)
+27 = after making this change now we can get logged in and initializtion is going to sequentially happen.
+
+#### ForgotPassword(line 55)
+28 = in resetPassword it sends an reset email and if it successfully sends the email then it shows the modal with the set modal message. 
+
+#### /store/index.js (line 62)
+29 = with this action we can get the currently logged user's information. the information collected by the mutations committed there inside.
+
+#### App.vue (line 25)
+30 = here this method runs in every auth state change. the user parameter contains if there is any current user logged in.

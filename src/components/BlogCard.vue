@@ -1,7 +1,7 @@
 <template>
   <div class="blog-card">
+    <!-- [18] -->
     <div v-show="editPost" class="icons">
-      <!-- [18] -->
       <div class="icon">
         <Edit class="edit" />
       </div>
